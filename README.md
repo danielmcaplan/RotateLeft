@@ -5,6 +5,7 @@ Description:
 
 This utility reads in a file with the following format:
 D R
+
 N1 N2 NX
 
 Where D is the number of integers on the second line and R is the number of left rotations to perform
