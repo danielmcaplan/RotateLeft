@@ -19,6 +19,7 @@ $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
+	@mkdir -p $(@D) #create obj directory if it doesn't exist
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 	
 clean:
